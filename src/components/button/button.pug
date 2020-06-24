@@ -1,0 +1,3 @@
+mixin button(props = {})
+      a(class=`wil-button wil-button--${props.style} wil-button--${props.size}` href=`${props.link || '#'}`, target="_blank", rel="noopener noreferrer")= props.text || 'button'
+    

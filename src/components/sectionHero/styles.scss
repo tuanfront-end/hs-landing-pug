@@ -1,0 +1,45 @@
+.sectionHero {
+    background-size: 100% 100%;
+    padding: 50px 0;
+    @media (min-width: 768px) {
+        background-image: url(../../assets/images/hero/bg.png);
+        padding-top: 210px;
+        padding-bottom: 160px;
+    }
+}
+
+.sectionHero__subtitle {
+    color: #4F4B65;
+    font-size: 20px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.sectionHero__text {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.sectionHero__image {
+    position: relative;
+    display: block;
+    margin-left: -60px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.sectionHero__imagePath {
+    position: absolute;
+    right: calc(100% - 115px);
+    top: calc(100% - 145px);
+}
+
+.sectionHero__btn1 {
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}

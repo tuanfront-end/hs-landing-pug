@@ -1,0 +1,27 @@
+.postBox {
+    margin-bottom: 40px;
+}
+
+.postBox__image {
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px 0 rgba($color: #282a54, $alpha: 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.postBox__content {
+    padding: 0 10px;
+}
+
+.postBox__title {
+    font-size: 18px;
+    color: #2e2a41;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.postBox__text {
+    display: block;
+    color: #7e7fa0;
+}

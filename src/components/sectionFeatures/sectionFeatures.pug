@@ -1,0 +1,59 @@
+mixin sectionFeatures(props = {})
+  +component("div", "sectionFeatures", props)
+       .container
+            +heading({
+                before: 'Essential',
+                highlight: 'features',
+                after: 'for you',
+                text: "There are many things that are important to catalog design. Your images must be sharp and appealing."
+            })
+            div.sectionFeatures__content
+                .row
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Favorite Posts',
+                                text: `It's a useful feature for your customers: They can SAVE an useful article and easily reach it in future under Favorite Store.`,
+                                icon: 'lar la-heart',
+                                iconColor: '#FD9B9B'
+                            })
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Recently Viewed',
+                                text: `Every time visits an article, HSBlog will remember it. Customers can easily reach it next time under Recently Reviewed area.`,
+                                icon: 'las la-history',
+                                iconColor: '#B06BF1'
+                            })
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Awesome Mega Menu',
+                                text: `A useful feature helps you can add more information to your menu but still keep it simple and clean`,
+                                icon: 'las la-archive',
+                                iconColor: '#45CCDB'
+                            })
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Theme Options',
+                                text: `Here you can customize Header Style, Footer Style, Heading Tags's Font, Social Networks, MailChimp, Youtube and much more ....`,
+                                icon: 'las la-cog',
+                                iconColor: '#545CF0'
+                            })
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Social Login',
+                                text: `In addition Default WordPress Login, Customer can easily signin / signup to your site with their Facebook and Apple.`,
+                                icon: 'las la-thumbs-up',
+                                iconColor: '#F16BAC'
+                            })
+                    div(class="col-md-4 col-sm-6")
+                        div.mb-30
+                            +textBox3({
+                                title: 'Google reCaptcha V3',
+                                text: `Protects your site website forms from spam entries while letting real people pass through with ease`,
+                                icon: 'las la-check-circle',
+                                iconColor: '#48DE57'
+                            })

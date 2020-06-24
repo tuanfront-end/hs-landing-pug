@@ -1,0 +1,5 @@
+mixin textBox(props = {})
+  +component("div", "textBox", props)
+      h2.textBox__title= props.title || random(api.title)
+      span.textBox__text= props.text || random(api.text, 100)
+      span.textBox__circle(style=`background-color: ${props.circleColor || 'orange'}`)

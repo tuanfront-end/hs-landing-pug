@@ -1,0 +1,32 @@
+mixin sectionWhyChose(props = {})
+  +component("div", "sectionWhyChose", props)
+        .container
+            .row
+                div(class="col-lg-5 col-md-12")
+                    .sectionWhyChose__left
+                        +headingHighLight({
+                            before: props.title || 'Why should You choose HSBlog?',
+                            highlight: ' ',
+                            after: ' ',
+                            color: '#F2F2F3'
+                        })
+                        div.sectionWhyChose__text= props.text || 'Blog was born after 7 months of our hard work, everything from Code to Design are meticulously cared-for. There are lots of things that makes HsBlog different from other blog themes'
+                        |
+                        |
+                        +button({text: `Let's try and enjoy HsBlog yourself`, style:'style2', link: 'http://highspeedblog.com/', size: 'extra'})
+                div(class="col-lg-7 col-md-12")
+                    div.sectionWhyChose__textBox
+                        div(class="sectionWhyChose__textBoxItem sectionWhyChose__textBoxItem1")
+                            +textBox2({ number: '1', numberClass: 'wil-shadow--2', numberBg: '#FB7979', text: 'Faster than other websites: Based on <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">ReactJs</a> - the most popular javascript library created by Facebook - HsBlog takes advantage of the library, it allowed us to create HsBlog with smallest code, so it helps to improve site speed. HsBlog is very fast. '})
+                            |
+                            |
+                            +textBox2({ number: '3', numberClass: 'wil-shadow--3', numberBg: '#D278F3', text: `Android and iOS are included: Nowadays, App is very important. It's not only improve your connection with clients, but also increase your brand recognition. `})
+                            |
+                            |
+                        div(class="sectionWhyChose__textBoxItem sectionWhyChose__textBoxItem2")
+                            |
+                            |
+                            +textBox2({ number: '2', numberClass: 'wil-shadow--4', numberBg: '#38BBDD', text: `Single Page Application (SPAs): Another special feature that makes HsBlog different from other themes. When clicking a link on website, HsBlog doesn't Have To Refresh Browser, the data is downloaded instant instead. SPAs are all about serving an outstanding UX by trying to imitate a “natural” environment in the browser — no page reloads, no extra wait time.`})
+                            
+  
+                    

@@ -1,0 +1,45 @@
+mixin sectionTextBox(props = {})
+  +component("div", "sectionTextBox", props)
+    div(
+        class=`sectionTextBox__content sectionTextBox__content--${props.style}`, 
+        style=`background-image: url(${props.bg}); background-color: ${props.bgColor}; ${props.cssStyle}` 
+        )
+        .container
+            if props.style == 'left'
+                .row
+                    div(class="col-md-5 col-sm-12")
+                        .sectionTextBox__left
+                            +headingHighLight({
+                                before: props.titleBefore || ' ',
+                                highlight: props.titleHighlight || ' ',
+                                after: props.titleAfter || ' ',
+                            })
+                            span.sectionTextBox__text= props.text || random(api.text, 150)
+                            if props.button1
+                                span(style="margin-right: 10px")
+                                    +button({text: props.button1, link: props.button1Link, size: 'large'})
+                            if props.button2
+                                +button({style: 'style2', text: props.button2, link: props.button2Link,size: 'large' })
+                    div(class="col-md-7 col-sm-12")
+                        .sectionTextBox__right
+                            img(src=`${props.img}`, alt="")
+            if props.style == 'right'
+                .row
+                    div(class="col-md-7 col-sm-12")
+                        .sectionTextBox__right
+                            img(src=`${props.img}`, alt="")
+                    div(class="col-md-5 col-sm-12")
+                        .sectionTextBox__left
+                            +headingHighLight({
+                                before: props.titleBefore || ' ',
+                                highlight: props.titleHighlight || ' ',
+                                after: props.titleAfter || ' ',
+                            })
+                            span.sectionTextBox__text= props.text || random(api.text, 150)
+                            if props.button1
+                                span(style="margin-right: 10px")
+                                    +button({text: props.button1, link: props.button1Link, size: 'large'})
+                            if props.button2
+                                +button({style: 'style2', text: props.button2, link: props.button2Link, size: 'large'})
+                    
+

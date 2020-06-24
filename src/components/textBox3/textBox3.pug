@@ -1,0 +1,8 @@
+mixin textBox3(props = {})
+  +component("div", "textBox3", props)
+      span.textBox3__circle(style=`color: ${props.iconColor || 'white'};`)
+        i(class=`${props.icon || 'las la-beer'}`)
+        span.textBox3__circleBg(style=`background-color: ${props.iconColor || 'orange'}`)
+      h2.textBox3__title= props.title || random(api.title)
+      span.textBox3__text= props.text || random(api.text, 100)
+    

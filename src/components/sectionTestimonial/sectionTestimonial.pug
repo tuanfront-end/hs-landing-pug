@@ -1,0 +1,39 @@
+mixin sectionTestimonial(props = {})
+  +component("div", "", props)
+      div(class=`sectionTestimonial` style=props.css || "")
+        +heading({
+            before: 'Trusted by over',
+            highlight: '1000',
+            after: 'users',
+            text: 'There are many things that are important to catalog design. Your images must be sharp and appealing.'
+        })
+        .sectionTestimonial__content
+            .container
+                .row
+                    div(class="col-md-6 col-sm-12")
+                        div(class="slider-for sectionTestimonial__sliderFor")
+                            div
+                                img(src="../../assets/images/testimonial/1.png", alt="")
+                            div
+                                img(src="../../assets/images/testimonial/1.png", alt="")
+                            div
+                                img(src="../../assets/images/testimonial/1.png", alt="")
+                           
+                    div(class="col-md-6 col-sm-12")
+                        .sectionTestimonial__right
+                            span.sectionTestimonial__rightIcon
+                                <i class="las la-quote-right"></i>
+                            div(class="slider-nav sectionTestimonial__sliderNav")
+                                +testimonial({
+                                    text: 'Only five stars! and this despite the fact that the topic is still under improvement. I hope future updates will help her become even better. A great team with a great idea of the catalog.',
+                                    author: 'SergeyX'
+                                })
+                                +testimonial({
+                                    text: 'Good theme for directory website. Many features and many possibilities. Dev team always try to help me and listen to my idea. They can fix most of the issues I have. In conclusion, the people behind the theme is very impressive as much as the theme itself.',
+                                    author: 'K17super'
+                                })
+                                +testimonial({
+                                    text: 'Wow wow wow! I am so impressed about this theme, honestly speaking this is by far the best theme for me, and the support response time is amazingly fast. Keep up the good work.',
+                                    author: 'Dogman964602'
+                                })
+            

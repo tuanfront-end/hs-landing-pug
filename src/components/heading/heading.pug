@@ -1,0 +1,7 @@
+mixin heading(props = {})
+  +component("div", "heading", props)
+      h2.heading__title.
+        #{props.before || random(api.text, 10)}
+        #[span= props.highlight || random(api.text, 10)]
+        #{props.after || random(api.text, 10)}
+      span.heading__text= props.text || random(api.text, 100)

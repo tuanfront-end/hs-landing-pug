@@ -1,0 +1,26 @@
+include ../button/button
+
+mixin navigation(props = {})
+  +component("div", "wil-navigation", props)
+      .container
+        div.wil-navigation__wrap
+          div.navigation__logo
+            a(href="https://highspeedblog.com/", target="_blank", rel="noopener noreferrer")
+              img(src="../../assets/images/hsb-logo-1.png", alt="")
+          div.navigation__right
+            div.navigation__menu
+              ul
+                li 
+                  a(href="https://help.highspeedblog.com/", target="_blank", rel="noopener noreferrer") Home
+                li 
+                  a(href="https://highspeedblog.com/app-landing/", target="_blank", rel="noopener noreferrer") About application
+                li 
+                  a(href="https://help.highspeedblog.com/", target="_blank", rel="noopener noreferrer") Support
+                li 
+                  a(href="https://highspeedblog.com/", target="_blank", rel="noopener noreferrer") Blog
+            div.navigation__group
+              ul
+                li 
+                  +button({style:'style2', text: 'Get Started', link: 'https://highspeedblog.com/', size: 'medium'})
+                li 
+                  +button({style:'style1', text: 'Buy now', link: 'https://themeforest.net/item/hsblog-magazine-blog-wordpress-theme-and-ios-android-blog-app/27113728', size: 'medium'})

@@ -1,0 +1,37 @@
+.textBox3 {
+    color: #7E7FA0;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.textBox3__circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    i {
+        font-size: 34px;
+        font-weight: 600;
+    }
+}
+
+.textBox3__circleBg {
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .15;
+}
+
+.textBox3__title {
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}

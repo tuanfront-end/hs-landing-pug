@@ -1,0 +1,6 @@
+mixin headingHighLight(props = {})
+    +component("div", "headingHighLight", props)
+        h2(class=`headingHighLight__title headingHighLight__title--${props.size || 'small'}`, style=`color: ${props.color || ''}`).
+            #{props.before || random(api.text, 10)}
+            #[span= props.highlight || 'High Speed']
+            #{props.after || random(api.text, 10)}

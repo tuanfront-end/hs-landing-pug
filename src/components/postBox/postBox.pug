@@ -1,0 +1,8 @@
+mixin postBox(props = {})
+    +component("div", "postBox", props)
+        .postBox__image
+            img(src=`${props.image || `../../assets/images/features/1.png`}`, alt="")
+        .postBox__content
+            h2.postBox__title= props.title || random(api.text, 10)
+            span.postBox__text= props.text || random(api.text, 100)
+

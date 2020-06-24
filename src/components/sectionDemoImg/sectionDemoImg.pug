@@ -1,0 +1,1520 @@
+mixin sectionDemoImg(props = {})
+  +component("div", "sectionDemoImg", props)
+    - 
+        var dataMagzine = [
+            {
+                name: 'Magazine 1',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m1.png',
+                link:'https://highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'Magazine 2',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m2.png',
+                link:'https://highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'Magazine 3',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m3.png',
+                link:'https://highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'Magazine 4',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m4.png',
+                link:'https://highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'Magazine 5',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m5.png',
+                link:'https://highspeedblog.com/magazine-05/'
+            },
+            {
+                name: 'Magazine 6',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/m6.png',
+                link:'https://highspeedblog.com/magazine-06/'
+            },
+            //-  Magazine ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'Music magazine 1',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/m1.png',
+                link:'https://music.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'Music magazine 2',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/m2.png',
+                link:'https://music.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'Music magazine 3',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/m3.png',
+                link:'https://music.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'Music magazine 4',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/m4.png',
+                link:'https://music.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'Music magazine 5',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/m5.png',
+                link:'https://music.highspeedblog.com/magazine-05/'
+            },
+            //-  music ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'beauty magazine 1',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/m1.png',
+                link:'https://beauty.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'beauty magazine 2',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/m2.png',
+                link:'https://beauty.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'beauty magazine 3',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/m3.png',
+                link:'https://beauty.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'beauty magazine 4',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/m4.png',
+                link:'https://beauty.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'beauty magazine 5',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/m5.png',
+                link:'https://beauty.highspeedblog.com/magazine-05/'
+            },
+            //-  beauty ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'fashion magazine 1',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/m1.png',
+                link:'https://fashion.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'fashion magazine 2',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/m2.png',
+                link:'https://fashion.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'fashion magazine 3',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/m3.png',
+                link:'https://fashion.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'fashion magazine 4',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/m4.png',
+                link:'https://fashion.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'fashion magazine 5',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/m5.png',
+                link:'https://fashion.highspeedblog.com/magazine-05/'
+            },
+            //-  fashion ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'food magazine 1',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/m1.png',
+                link:'https://food.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'food magazine 2',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/m2.png',
+                link:'https://food.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'food magazine 3',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/m3.png',
+                link:'https://food.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'food magazine 4',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/m4.png',
+                link:'https://food.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'food magazine 5',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/m5.png',
+                link:'https://food.highspeedblog.com/magazine-05/'
+            },
+            //-  food ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'tech magazine 1',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/m1.png',
+                link:'https://tech.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'tech magazine 2',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/m2.png',
+                link:'https://tech.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'tech magazine 3',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/m3.png',
+                link:'https://tech.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'tech magazine 4',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/m4.png',
+                link:'https://tech.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'tech magazine 5',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/m5.png',
+                link:'https://tech.highspeedblog.com/magazine-05/'
+            },
+            //-  tech ----------------------------------------------------------------------------------------------------------------
+            {
+                name: 'health magazine 1',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/m1.png',
+                link:'https://health.highspeedblog.com/magazine-01/'
+            },
+            {
+                name: 'health magazine 2',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/m2.png',
+                link:'https://health.highspeedblog.com/magazine-02/'
+            },
+            {
+                name: 'health magazine 3',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/m3.png',
+                link:'https://health.highspeedblog.com/magazine-03/'
+            },
+            {
+                name: 'health magazine 4',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/m4.png',
+                link:'https://health.highspeedblog.com/magazine-04/'
+            },
+            {
+                name: 'health magazine 5',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/m5.png',
+                link:'https://health.highspeedblog.com/magazine-05/'
+            },
+            //-  health ----------------------------------------------------------------------------------------------------------------
+        ];
+        var magazineBlog = [
+            {
+                name: 'magazine Blog 1',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b1.png',
+                link:'https://highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'magazine Blog 2',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b2.png',
+                link:'https://highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'magazine Blog 3',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b3.png',
+                link:'https://highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'magazine Blog 4',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b4.png',
+                link:'https://highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'magazine Blog 5',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b5.png',
+                link:'https://highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'magazine Blog 6',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b6.png',
+                link:'https://highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'magazine Blog 7',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b7.png',
+                link:'https://highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'magazine Blog 8',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b8.png',
+                link:'https://highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'magazine Blog 9',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b9.png',
+                link:'https://highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'magazine Blog 10',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b10.png',
+                link:'https://highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'magazine Blog 11',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b11.png',
+                link:'https://highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'magazine Blog 12',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b12.png',
+                link:'https://highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'magazine Blog 13',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b13.png',
+                link:'https://highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'magazine Blog 14',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b14.png',
+                link:'https://highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'magazine Blog 15',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b15.png',
+                link:'https://highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'magazine Blog 16',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b16.png',
+                link:'https://highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'magazine Blog 17',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b17.png',
+                link:'https://highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'magazine Blog 18',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b18.png',
+                link:'https://highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'magazine Blog 19',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b19.png',
+                link:'https://highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'magazine Blog 20',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b20.png',
+                link:'https://highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'magazine Blog 21',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b21.png',
+                link:'https://highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'magazine Blog 22',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b22.png',
+                link:'https://highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'magazine Blog 23',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b23.png',
+                link:'https://highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'magazine Blog 24',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b24.png',
+                link:'https://highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'magazine Blog 25',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b25.png',
+                link:'https://highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'magazine Blog 26',
+                filter: 'magazine',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/magazine/b26.png',
+                link:'https://highspeedblog.com/home-blog-26'
+            },
+        ];
+        var musicBlog = [
+            {
+                name: 'music Blog 1',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b1.png',
+                link:'https://music.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'music Blog 2',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b2.png',
+                link:'https://music.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'music Blog 3',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b3.png',
+                link:'https://music.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'music Blog 4',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b4.png',
+                link:'https://music.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'music Blog 5',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b5.png',
+                link:'https://music.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'music Blog 6',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b6.png',
+                link:'https://music.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'music Blog 7',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b7.png',
+                link:'https://music.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'music Blog 8',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b8.png',
+                link:'https://music.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'music Blog 9',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b9.png',
+                link:'https://music.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'music Blog 10',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b10.png',
+                link:'https://music.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'music Blog 11',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b11.png',
+                link:'https://music.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'music Blog 12',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b12.png',
+                link:'https://music.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'music Blog 13',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b13.png',
+                link:'https://music.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'music Blog 14',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b14.png',
+                link:'https://music.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'music Blog 15',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b15.png',
+                link:'https://music.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'music Blog 16',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b16.png',
+                link:'https://music.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'music Blog 17',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b17.png',
+                link:'https://music.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'music Blog 18',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b18.png',
+                link:'https://music.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'music Blog 19',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b19.png',
+                link:'https://music.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'music Blog 20',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b20.png',
+                link:'https://music.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'music Blog 21',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b21.png',
+                link:'https://music.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'music Blog 22',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b22.png',
+                link:'https://music.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'music Blog 23',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b23.png',
+                link:'https://music.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'music Blog 24',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b24.png',
+                link:'https://music.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'music Blog 25',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b25.png',
+                link:'https://music.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'music Blog 26',
+                filter: 'music',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/music/b26.png',
+                link:'https://music.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var beautyBlog = [
+            {
+                name: 'beauty Blog 1',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b1.png',
+                link:'https://beauty.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'beauty Blog 2',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b2.png',
+                link:'https://beauty.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'beauty Blog 3',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b3.png',
+                link:'https://beauty.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'beauty Blog 4',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b4.png',
+                link:'https://beauty.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'beauty Blog 5',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b5.png',
+                link:'https://beauty.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'beauty Blog 6',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b6.png',
+                link:'https://beauty.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'beauty Blog 7',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b7.png',
+                link:'https://beauty.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'beauty Blog 8',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b8.png',
+                link:'https://beauty.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'beauty Blog 9',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b9.png',
+                link:'https://beauty.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'beauty Blog 10',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b10.png',
+                link:'https://beauty.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'beauty Blog 11',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b11.png',
+                link:'https://beauty.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'beauty Blog 12',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b12.png',
+                link:'https://beauty.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'beauty Blog 13',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b13.png',
+                link:'https://beauty.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'beauty Blog 14',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b14.png',
+                link:'https://beauty.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'beauty Blog 15',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b15.png',
+                link:'https://beauty.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'beauty Blog 16',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b16.png',
+                link:'https://beauty.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'beauty Blog 17',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b17.png',
+                link:'https://beauty.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'beauty Blog 18',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b18.png',
+                link:'https://beauty.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'beauty Blog 19',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b19.png',
+                link:'https://beauty.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'beauty Blog 20',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b20.png',
+                link:'https://beauty.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'beauty Blog 21',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b21.png',
+                link:'https://beauty.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'beauty Blog 22',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b22.png',
+                link:'https://beauty.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'beauty Blog 23',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b23.png',
+                link:'https://beauty.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'beauty Blog 24',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b24.png',
+                link:'https://beauty.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'beauty Blog 25',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b25.png',
+                link:'https://beauty.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'beauty Blog 26',
+                filter: 'beauty',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/beauty/b26.png',
+                link:'https://beauty.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var fashionBlog = [
+            {
+                name: 'fashion Blog 1',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b1.png',
+                link:'https://fashion.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'fashion Blog 2',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b2.png',
+                link:'https://fashion.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'fashion Blog 3',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b3.png',
+                link:'https://fashion.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'fashion Blog 4',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b4.png',
+                link:'https://fashion.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'fashion Blog 5',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b5.png',
+                link:'https://fashion.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'fashion Blog 6',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b6.png',
+                link:'https://fashion.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'fashion Blog 7',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b7.png',
+                link:'https://fashion.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'fashion Blog 8',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b8.png',
+                link:'https://fashion.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'fashion Blog 9',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b9.png',
+                link:'https://fashion.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'fashion Blog 10',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b10.png',
+                link:'https://fashion.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'fashion Blog 11',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b11.png',
+                link:'https://fashion.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'fashion Blog 12',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b12.png',
+                link:'https://fashion.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'fashion Blog 13',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b13.png',
+                link:'https://fashion.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'fashion Blog 14',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b14.png',
+                link:'https://fashion.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'fashion Blog 15',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b15.png',
+                link:'https://fashion.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'fashion Blog 16',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b16.png',
+                link:'https://fashion.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'fashion Blog 17',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b17.png',
+                link:'https://fashion.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'fashion Blog 18',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b18.png',
+                link:'https://fashion.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'fashion Blog 19',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b19.png',
+                link:'https://fashion.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'fashion Blog 20',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b20.png',
+                link:'https://fashion.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'fashion Blog 21',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b21.png',
+                link:'https://fashion.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'fashion Blog 22',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b22.png',
+                link:'https://fashion.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'fashion Blog 23',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b23.png',
+                link:'https://fashion.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'fashion Blog 24',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b24.png',
+                link:'https://fashion.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'fashion Blog 25',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b25.png',
+                link:'https://fashion.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'fashion Blog 26',
+                filter: 'fashion',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/fashion/b26.png',
+                link:'https://fashion.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var foodBlog = [
+            {
+                name: 'food Blog 1',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b1.png',
+                link:'https://food.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'food Blog 2',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b2.png',
+                link:'https://food.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'food Blog 3',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b3.png',
+                link:'https://food.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'food Blog 4',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b4.png',
+                link:'https://food.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'food Blog 5',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b5.png',
+                link:'https://food.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'food Blog 6',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b6.png',
+                link:'https://food.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'food Blog 7',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b7.png',
+                link:'https://food.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'food Blog 8',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b8.png',
+                link:'https://food.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'food Blog 9',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b9.png',
+                link:'https://food.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'food Blog 10',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b10.png',
+                link:'https://food.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'food Blog 11',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b11.png',
+                link:'https://food.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'food Blog 12',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b12.png',
+                link:'https://food.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'food Blog 13',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b13.png',
+                link:'https://food.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'food Blog 14',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b14.png',
+                link:'https://food.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'food Blog 15',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b15.png',
+                link:'https://food.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'food Blog 16',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b16.png',
+                link:'https://food.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'food Blog 17',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b17.png',
+                link:'https://food.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'food Blog 18',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b18.png',
+                link:'https://food.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'food Blog 19',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b19.png',
+                link:'https://food.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'food Blog 20',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b20.png',
+                link:'https://food.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'food Blog 21',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b21.png',
+                link:'https://food.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'food Blog 22',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b22.png',
+                link:'https://food.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'food Blog 23',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b23.png',
+                link:'https://food.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'food Blog 24',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b24.png',
+                link:'https://food.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'food Blog 25',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b25.png',
+                link:'https://food.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'food Blog 26',
+                filter: 'food',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/food/b26.png',
+                link:'https://food.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var techBlog = [
+            {
+                name: 'tech Blog 1',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b1.png',
+                link:'https://tech.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'tech Blog 2',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b2.png',
+                link:'https://tech.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'tech Blog 3',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b3.png',
+                link:'https://tech.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'tech Blog 4',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b4.png',
+                link:'https://tech.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'tech Blog 5',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b5.png',
+                link:'https://tech.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'tech Blog 6',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b6.png',
+                link:'https://tech.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'tech Blog 7',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b7.png',
+                link:'https://tech.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'tech Blog 8',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b8.png',
+                link:'https://tech.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'tech Blog 9',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b9.png',
+                link:'https://tech.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'tech Blog 10',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b10.png',
+                link:'https://tech.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'tech Blog 11',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b11.png',
+                link:'https://tech.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'tech Blog 12',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b12.png',
+                link:'https://tech.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'tech Blog 13',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b13.png',
+                link:'https://tech.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'tech Blog 14',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b14.png',
+                link:'https://tech.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'tech Blog 15',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b15.png',
+                link:'https://tech.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'tech Blog 16',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b16.png',
+                link:'https://tech.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'tech Blog 17',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b17.png',
+                link:'https://tech.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'tech Blog 18',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b18.png',
+                link:'https://tech.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'tech Blog 19',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b19.png',
+                link:'https://tech.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'tech Blog 20',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b20.png',
+                link:'https://tech.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'tech Blog 21',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b21.png',
+                link:'https://tech.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'tech Blog 22',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b22.png',
+                link:'https://tech.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'tech Blog 23',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b23.png',
+                link:'https://tech.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'tech Blog 24',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b24.png',
+                link:'https://tech.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'tech Blog 25',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b25.png',
+                link:'https://tech.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'tech Blog 26',
+                filter: 'tech',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/tech/b26.png',
+                link:'https://tech.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var healthBlog = [
+            {
+                name: 'health Blog 1',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b1.png',
+                link:'https://health.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'health Blog 2',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b2.png',
+                link:'https://health.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'health Blog 3',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b3.png',
+                link:'https://health.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'health Blog 4',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b4.png',
+                link:'https://health.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'health Blog 5',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b5.png',
+                link:'https://health.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'health Blog 6',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b6.png',
+                link:'https://health.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'health Blog 7',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b7.png',
+                link:'https://health.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'health Blog 8',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b8.png',
+                link:'https://health.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'health Blog 9',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b9.png',
+                link:'https://health.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'health Blog 10',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b10.png',
+                link:'https://health.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'health Blog 11',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b11.png',
+                link:'https://health.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'health Blog 12',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b12.png',
+                link:'https://health.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'health Blog 13',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b13.png',
+                link:'https://health.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'health Blog 14',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b14.png',
+                link:'https://health.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'health Blog 15',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b15.png',
+                link:'https://health.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'health Blog 16',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b16.png',
+                link:'https://health.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'health Blog 17',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b17.png',
+                link:'https://health.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'health Blog 18',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b18.png',
+                link:'https://health.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'health Blog 19',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b19.png',
+                link:'https://health.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'health Blog 20',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b20.png',
+                link:'https://health.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'health Blog 21',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b21.png',
+                link:'https://health.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'health Blog 22',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b22.png',
+                link:'https://health.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'health Blog 23',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b23.png',
+                link:'https://health.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'health Blog 24',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b24.png',
+                link:'https://health.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'health Blog 25',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b25.png',
+                link:'https://health.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'health Blog 26',
+                filter: 'health',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/health/b26.png',
+                link:'https://health.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var travelBlog = [
+            {
+                name: 'travel Blog 1',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b1.png',
+                link:'https://travel.highspeedblog.com/home-blog-1'
+            },
+            {
+                name: 'travel Blog 2',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b2.png',
+                link:'https://travel.highspeedblog.com/home-blog-2'
+            },
+            {
+                name: 'travel Blog 3',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b3.png',
+                link:'https://travel.highspeedblog.com/home-blog-3'
+            },
+            {
+                name: 'travel Blog 4',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b4.png',
+                link:'https://travel.highspeedblog.com/home-blog-4'
+            },
+            {
+                name: 'travel Blog 5',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b5.png',
+                link:'https://travel.highspeedblog.com/home-blog-5'
+            },
+            {
+                name: 'travel Blog 6',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b6.png',
+                link:'https://travel.highspeedblog.com/home-blog-6'
+            },
+            {
+                name: 'travel Blog 7',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b7.png',
+                link:'https://travel.highspeedblog.com/home-blog-7'
+            },
+            {
+                name: 'travel Blog 8',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b8.png',
+                link:'https://travel.highspeedblog.com/home-blog-8'
+            },
+            {
+                name: 'travel Blog 9',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b9.png',
+                link:'https://travel.highspeedblog.com/home-blog-9'
+            },
+            {
+                name: 'travel Blog 10',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b10.png',
+                link:'https://travel.highspeedblog.com/home-blog-10'
+            },
+            {
+                name: 'travel Blog 11',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b11.png',
+                link:'https://travel.highspeedblog.com/home-blog-11'
+            },
+            {
+                name: 'travel Blog 12',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b12.png',
+                link:'https://travel.highspeedblog.com/home-blog-12'
+            },
+            {
+                name: 'travel Blog 13',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b13.png',
+                link:'https://travel.highspeedblog.com/home-blog-13'
+            },
+            {
+                name: 'travel Blog 14',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b14.png',
+                link:'https://travel.highspeedblog.com/home-blog-14'
+            },
+            {
+                name: 'travel Blog 15',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b15.png',
+                link:'https://travel.highspeedblog.com/home-blog-15'
+            },
+            {
+                name: 'travel Blog 16',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b16.png',
+                link:'https://travel.highspeedblog.com/home-blog-16'
+            },
+            {
+                name: 'travel Blog 17',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b17.png',
+                link:'https://travel.highspeedblog.com/home-blog-17'
+            },
+            {
+                name: 'travel Blog 18',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b18.png',
+                link:'https://travel.highspeedblog.com/home-blog-18'
+            },
+            {
+                name: 'travel Blog 19',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b19.png',
+                link:'https://travel.highspeedblog.com/home-blog-19'
+            },
+            {
+                name: 'travel Blog 20',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b20.png',
+                link:'https://travel.highspeedblog.com/home-blog-20'
+            },
+            {
+                name: 'travel Blog 21',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b21.png',
+                link:'https://travel.highspeedblog.com/home-blog-21'
+            },
+            {
+                name: 'travel Blog 22',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b22.png',
+                link:'https://travel.highspeedblog.com/home-blog-22'
+            },
+            {
+                name: 'travel Blog 23',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b23.png',
+                link:'https://travel.highspeedblog.com/home-blog-23'
+            },
+            {
+                name: 'travel Blog 24',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b24.png',
+                link:'https://travel.highspeedblog.com/home-blog-24'
+            },
+            {
+                name: 'travel Blog 25',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b25.png',
+                link:'https://travel.highspeedblog.com/home-blog-25'
+            },
+            {
+                name: 'travel Blog 26',
+                filter: 'travel',
+                image:'https://highspeedblog.com/hsBuilderImgs/themeDemoImgs/travel/b26.png',
+                link:'https://travel.highspeedblog.com/home-blog-26'
+            },
+        ];
+        var data = [...dataMagzine, ...magazineBlog,...musicBlog,...beautyBlog,...fashionBlog,...foodBlog,...techBlog,...healthBlog,...travelBlog];
+    .container
+        div(style="margin-bottom: 40px")
+            |
+            +heading({before: 'Pre-Built Dummy Website', highlight: ' ', after: ' ' , text: 'HsBlog includes more than 210+ pre-built homepages and settings. You can easily import them with One Click Demo Installation system'})
+            |
+        div
+            ul(class="sectionDemoImg__menu wilTabFilterMenu" id="wilTabFilterMenu")
+                li(class="wilTabFilterMenuItem active", onclick="filterSelection('all')") All
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('magazine')") Magazine
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('music')") Music
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('beauty')") Beauty
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('fashion')") Fashion
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('food')") Food
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('tech')") Tech
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('health')") Health
+                li(class="wilTabFilterMenuItem", onclick="filterSelection('travel')") Travel
+
+
+        div(class="sectionDemoImg__demo")
+            .row
+                each item in data
+                    div(class=`col-lg-3 col-md-6 col-sm-6 col-xs-6 wilTabFilterItem ${item.filter}`)
+                        a(class=`sectionDemoImg__demoItem sectionDemoImg__demoItem--${item.filter}` ,href=`${item.link || '#'}`, target="_blank", rel="noopener noreferrer")
+                            img(src=`${item.image}`, alt="")
+                            span= item.name
+            span.sectionDemoImg__overlay
+                a(class="wil-button wil-button--style1 wil-button--extra" href="#", id="wil-show-all-demo") Show all demo

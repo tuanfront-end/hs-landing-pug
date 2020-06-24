@@ -1,0 +1,49 @@
+@function textUnderlineConstructor($opt) {
+    $defaultOpt: (size: 10, color: "red", bottomSpace: 15, underLineStyle: "solid");
+    @return map-merge($defaultOpt, $opt);
+}
+
+@mixin textUnderline($el, $opt: ()) {
+    $opts: textUnderlineConstructor($opt);
+    $size: map-get($opts, 'size');
+    $color: unquote(map-get($opts, 'color'));
+    $bottomSpace: map-get($opts, 'bottomSpace');
+    $underLineStyle: unquote(map-get($opts, 'underLineStyle'));
+    #{$el} {
+        display: inline;
+        border-bottom: $size * 1px $underLineStyle $color;
+        position: relative;
+        top: -$bottomSpace * 1px;
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        >* {
+            display: inherit;
+            position: relative;
+            top: $bottomSpace * 1px;
+        }
+    }
+}
+
+// style
+.textUnderline {
+    font-size: 30px;
+}
+
+.textUnderline2 {
+    font-size: 40px;
+}
+
+.textUnderline3 {
+    font-size: 20px;
+}
+
+// thuc thi textUnderline
+@include textUnderline('.textUnderline', (size: 20, color: "#A5F7E3", bottomSpace: 30));
+// thuc thi textUnderline
+@include textUnderline('.textUnderline2', (size: 30, color: "#A5F7E3", bottomSpace: 30));
+// thuc thi textUnderline
+@include textUnderline('.textUnderline3', (size: 5, color: "red", bottomSpace: 0, underLineStyle: "dotted"));

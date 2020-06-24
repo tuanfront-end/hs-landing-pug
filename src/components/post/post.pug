@@ -1,0 +1,4 @@
+mixin post(props = {})
+  +component("div", "post", props)
+      h2.post__title= props.title || random(api.title)
+      div.post__text= props.text || random(api.text, 100)

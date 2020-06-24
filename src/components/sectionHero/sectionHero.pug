@@ -1,0 +1,22 @@
+mixin sectionHero(props = {})
+  +component("div", "sectionHero", props)
+      .container
+        +row
+            +col({ cols: [12, 12, 12, 6] })
+              +headingHighLight({size: 'large', before:' ', highlight: 'High Speed', after: 'Wordpess Theme'})
+              span.sectionHero__subtitle= props.text || 'WordPress Blog / Magazine theme based on ReactJS'
+              span.sectionHero__text= props.text || 'Attending a trade show can be a very effective method of promoting your company and its products. And one of the most effective ways to optimize your trade show display and increase traffic'
+              |
+              .row
+                div(class="col-md-6 col-sm-12")
+                  .sectionHero__btn1
+                    +button({link:"#", text:'Get started', style: "style1", size: 'large'})
+                div(class="col-md-6 col-sm-12")
+                  +button({link:"#", text:'Free', style: "style3", size: 'small'})
+                  span(style="display: block") IOS & Android Application
+            
+            +col({ cols: [12, 12, 12, 6] })
+                div.sectionHero__image
+                  img(src="../../assets/images/hero/Artboard.png", alt="", srcset="")
+                  img.sectionHero__imagePath(src="../../assets/images/hero/Path2.png", alt="", srcset="")
+                  

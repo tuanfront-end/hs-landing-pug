@@ -1,0 +1,4 @@
+mixin testimonial(props = {})
+  +component("div", "testimonial", props)
+      span.testimonial__text= props.text || random(api.text, 100)
+      span.testimonial__author= props.author || random(api.title)

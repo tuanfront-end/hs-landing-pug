@@ -1,0 +1,27 @@
+.testimonial {
+    display: block;
+}
+
+.testimonial__text {
+    display: block;
+    margin-bottom: 29px;
+}
+
+.testimonial__author {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2E2A41;
+    display: inline-block;
+    text-transform: capitalize;
+    &::before {
+        content: '';
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        right: 100%;
+        top: 50%;
+        border-bottom: 1px solid #D1D0D6;
+    }
+}

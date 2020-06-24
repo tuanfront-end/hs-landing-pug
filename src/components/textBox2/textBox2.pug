@@ -1,0 +1,5 @@
+mixin textBox2(props = {})
+  +component("div", "", props)
+      div(class=`textBox2` style=props.css || "")
+        span(class=`textBox2__number ${props.numberClass}` style=`background: ${props.numberBg}`)= props.number || 1
+        span.textBox2__text!= props.text || random(api.text, 300)

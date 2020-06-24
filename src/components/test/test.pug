@@ -1,0 +1,4 @@
+mixin test(props = {})
+  +component("div", "test", props)
+      h2.test__title= props.title || random(api.title)
+      div.test__text= props.text || random(api.text, 100)

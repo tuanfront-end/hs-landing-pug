@@ -1,0 +1,28 @@
+.footer {
+    padding: 70px 0 35px 0;
+    text-align: center;
+}
+
+.footer__menu {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.footer__menuItem {
+    color: #4F4B65;
+    @media (min-width: 768px) {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 25px;
+    }
+    a {
+        font-size: 15px;
+    }
+}
+
+.footer__coppyright {
+    font-size: 14px;
+    color: #6D6886;
+}

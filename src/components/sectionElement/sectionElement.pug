@@ -1,0 +1,47 @@
+mixin sectionElement(props = {})
+  +component("div", "sectionElement", props)
+    .container
+        +heading({
+            before: 'Blog Detail',
+            highlight: 'Elements',
+            after: ' '
+        })
+        .mt-40
+            .row
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/1.png',
+                        title: 'Play Media',
+                        text: 'You can show your list youtube video or list youtube video you was liked'
+                    })
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/2.png',
+                        title: 'Code Highlight',
+                        text: 'The great way for show your code to everybody'
+                    })
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/3.png',
+                        title: 'Gallery Image',
+                        text: 'Show your images with our beauty gallery popup'
+                    })
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/4.png',
+                        title: 'Image Comparison',
+                        text: 'Help you can comparison images together'
+                    })
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/5.png',
+                        title: 'Slider Image',
+                        text: 'Show your images with our slider image'
+                    })
+                div(class="col-md-4 col-sm-6 col-xs-12")
+                    +postBox({
+                        image: '../../assets/images/features/6.png',
+                        title: 'Smart Search',
+                        text: 'Quickly and exactly search posts with smart search'
+                    })
+

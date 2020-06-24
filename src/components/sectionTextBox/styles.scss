@@ -1,0 +1,48 @@
+.sectionTextBox {
+    padding: 30px 0;
+    .wil-button {
+        margin-bottom: 10px;
+    }
+}
+
+.sectionTextBox__content {
+    background-image: url(../../assets/images/textBox/bg2.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 40px 0;
+    @media (min-width: 768px) {
+        padding: 90px 0;
+    }
+    &.sectionTextBox__content--left {
+        background-position: right;
+    }
+    &.sectionTextBox__content--right {
+        background-position: left;
+    }
+}
+
+.sectionTextBox__leftTitle {
+    display: block;
+}
+
+.sectionTextBox__title {
+    display: block;
+}
+
+.sectionTextBox__text {
+    color: #6D6886;
+    font-size: 16px;
+    display: block;
+    margin: 44px 0;
+}
+
+.sectionTextBox__left {
+    margin-top: 20px;
+}
+
+.sectionTextBox__right {
+    margin: 30px 0;
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+}
