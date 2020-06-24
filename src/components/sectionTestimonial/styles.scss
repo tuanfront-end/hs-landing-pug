@@ -17,10 +17,17 @@
     }
 }
 
+.sectionTestimonial__right {
+    @media (min-width: 768px) {
+        padding-left: 25px;
+    }
+}
+
 .sectionTestimonial__rightIcon {
     position: relative;
     display: block;
     margin-bottom: 20px;
+    margin-left: 15px;
     i.las {
         font-size: 100px;
         color: $color-primary;

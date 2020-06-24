@@ -4,13 +4,14 @@
   _wilTabFilter();
   // _showAllDemo();
   _slickSliderTestimonial();
+  _slickSliderAppSreenShot();
   // _fixedNavigation();
 })();
 
 function _wilTabFilter() {
   filterSelection("all");
-  // Add active class to the current button (highlight it)
   var btnContainer = document.getElementById("wilTabFilterMenu");
+  if (!btnContainer) return;
   var btns = btnContainer.getElementsByClassName("wilTabFilterMenuItem");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
@@ -122,8 +123,44 @@ function _slickSliderTestimonial() {
     asNavFor: ".slider-for",
     arrows: false,
     dots: true,
+    adaptiveHeight: true,
     fade: true,
     focusOnSelect: true,
+  });
+}
+function _slickSliderAppSreenShot() {
+  $(".sectionAppSlider__slick").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    // centerMode: true,
+    speed: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 }
 

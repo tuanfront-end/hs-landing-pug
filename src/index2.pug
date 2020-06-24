@@ -17,69 +17,9 @@ include components/sectionTestimonial/sectionTestimonial
 include components/sectionFeatures/sectionFeatures
 include components/sectionTextBox/sectionTextBox
 include components/sectionElement/sectionElement
-//- 
-include components/sectionSimulation/sectionSimulation
-include components/sectionHeroApp/sectionHeroApp
-include components/sectionAppSlider/sectionAppSlider
-//- 
 include components/footer/footer
 block content
   +navigation
-
-  //- app ---------- BEGIN
-  +sectionHeroApp
-  +sectionFeatures({
-    heading: {
-      before: 'Our provided',
-      highlight: 'features',
-      after: ' ',
-      text: "Not only can you drag and drop to create a page, you also have the following useful features"
-    },
-    data: [
-      {
-        title: 'Smart Swipe Screen',
-        text: `A useful feature for your audiences, they can easily read a new / previous article with 1 swiper action`,
-        icon: 'lar la-arrows-alt-h',
-        iconColor: '#FD9B9B'
-      },
-      {
-        title: 'Dark Mode',
-        text: `Dark Mode is supported. Once enabled the feature, Your App uses a darker color palette for all screens, views, menus, and controls`,
-        icon: 'las la-adjust',
-        iconColor: '#5151BD'
-      },
-      {
-        title: 'Following Categories',
-        text: `You can follow any ?categories. HSBlog will send you notifications when there are new posts in that categories`,
-        icon: 'las la-plus-circle',
-        iconColor: '#45CCDB'
-      },
-      {
-        title: 'Comment & Mention',
-        text: `Making comment more exciting we have a “mention” feature that lets you tag active people`,
-        icon: 'las la-comments',
-        iconColor: '#BB9BFD'
-      },
-      {
-        title: 'Notifications',
-        text: `You have a screen where you manage notifications when there are new posts or interact with you via comments`,
-        icon: 'las la-bell',
-        iconColor: '#F1C06B'
-      },
-      {
-        title: 'Offline',
-        text: `When you lose your internet connection, you can still access the application to read the articles you once read`,
-        icon: 'las la-wifi',
-        iconColor: '#48DE57'
-      },
-    ]
-  })
-  +sectionAppSlider
-  +sectionSimulation
-
-  //- app ---------- END
-
-  div(style="height: 100vh")
   //- section hero
   +sectionHero
   //- section features 1
@@ -124,52 +64,7 @@ block content
   //- sectionTestimonial
   +sectionTestimonial
   //- sectionFeatures
-  +sectionFeatures({
-    heading: {
-      before: 'Essential',
-      highlight: 'features',
-      after: 'for you',
-      text: "There are many things that are important to catalog design. Your images must be sharp and appealing."
-    },
-    data: [
-      {
-        title: 'Favorite Posts',
-        text: `It's a useful feature for your customers: They can SAVE an useful article and easily reach it in future under Favorite Store.`,
-        icon: 'lar la-heart',
-        iconColor: '#FD9B9B'
-      },
-      {
-        title: 'Recently Viewed',
-        text: `Every time visits an article, HSBlog will remember it. Customers can easily reach it next time under Recently Reviewed area.`,
-        icon: 'las la-history',
-        iconColor: '#B06BF1'
-      },
-      {
-        title: 'Awesome Mega Menu',
-        text: `A useful feature helps you can add more information to your menu but still keep it simple and clean`,
-        icon: 'las la-archive',
-        iconColor: '#45CCDB'
-      },
-      {
-        title: 'Theme Options',
-        text: `Here you can customize Header Style, Footer Style, Heading Tags's Font, Social Networks, MailChimp, Youtube and much more ....`,
-        icon: 'las la-cog',
-        iconColor: '#545CF0'
-      },
-      {
-        title: 'Social Login',
-        text: `In addition Default WordPress Login, Customer can easily signin / signup to your site with their Facebook and Apple.`,
-        icon: 'las la-thumbs-up',
-        iconColor: '#F16BAC'
-      },
-      {
-        title: 'Google reCaptcha V3',
-        text: `Protects your site website forms from spam entries while letting real people pass through with ease`,
-        icon: 'las la-check-circle',
-        iconColor: '#48DE57'
-      },
-    ]
-  })
+  +sectionFeatures
   //- sectionTextBox
   +sectionTextBox({
     titleBefore: 'Conver your HSBlog site into true',

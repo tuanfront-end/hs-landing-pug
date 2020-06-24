@@ -1,0 +1,25 @@
+mixin sectionHeroApp(props = {})
+  +component("div", "sectionHeroApp", props)
+      .container
+        +row
+            +col({ cols: [12, 12, 12, 6] })
+              .sectionHeroApp__image
+                img(src="../../assets/images/hero/Group3.png", alt="", srcset="")
+              |
+              |
+            +col({ cols: [12, 12, 12, 6] })
+              .sectionHeroApp__right
+                +headingHighLight({size: 'large', before:'Convert your', highlight: 'HSBlog', after: 'site into true native apps.'})
+                |
+                |
+                span.sectionHeroApp__text= props.text || 'Build mobile apps quickly and without writing a single line of code using our intuitive Page Builder.'
+                |
+                |
+                .sectionHeroApp__btn
+                  a(href="http://", target="_blank", rel="noopener noreferrer")
+                    img(src="../../assets/images/btn-ios.png", alt="ios")
+                  a(href="http://", target="_blank", rel="noopener noreferrer")
+                    img(src="../../assets/images/btn-android.png", alt="android")
+            
+            
+                  

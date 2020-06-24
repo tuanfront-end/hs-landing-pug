@@ -1,0 +1,51 @@
+.sectionSimulation {
+    padding: 30px 0;
+    .wil-button {
+        margin-bottom: 10px;
+    }
+}
+
+.sectionSimulation__content {
+    background-image: url(../../assets/images/bg/1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 100%;
+    padding: 40px 0;
+    @media (min-width: 768px) {
+        padding: 90px 0;
+    }
+}
+
+.sectionSimulation__text {
+    color: #6D6886;
+    font-size: 16px;
+    display: block;
+    margin: 44px 0;
+}
+
+.sectionSimulation__left {
+    margin-top: 40px;
+    a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.sectionSimulation__right {
+    display: none;
+    @media (min-width: 900px) {
+        display: block;
+        padding-left: 40px;
+    }
+}
+
+.sectionSimulation__phone1 {
+    width: 291px;
+    height: 612px;
+    margin-right: 35px;
+}
+
+.sectionSimulation__phone2 {
+    width: 280px;
+    height: 560px;
+}

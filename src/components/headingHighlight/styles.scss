@@ -1,6 +1,7 @@
 .headingHighLight__title {
     font-size: 40px;
-    line-height: 48px;
+    @include pfs('font-size', (320px: 30px, 768px: 40px, 1200px: 40px));
+    line-height: 1.2;
     font-weight: 900;
     margin-bottom: 0;
     margin-top: 0;
@@ -20,8 +21,9 @@
         }
     }
     &.headingHighLight__title--large {
-        line-height: 76px;
         font-size: 60px;
+        line-height: 1.2;
+        @include pfs('font-size', (320px: 30px, 768px: 50px, 1200px: 60px));
         span::after {
             height: 30px;
         }

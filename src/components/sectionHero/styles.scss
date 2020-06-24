@@ -3,9 +3,14 @@
     padding: 50px 0;
     @media (min-width: 768px) {
         background-image: url(../../assets/images/hero/bg.png);
-        padding-top: 210px;
+        background-repeat: no-repeat;
+        padding-top: 200px;
         padding-bottom: 160px;
     }
+}
+
+.sectionHero__content {
+    margin-top: 10px;
 }
 
 .sectionHero__subtitle {

@@ -1,0 +1,43 @@
+.sectionHeroApp {
+    background-size: 100% 100%;
+    padding: 50px 0;
+    @media (min-width: 768px) {
+        background-image: url(../../assets/images/hero/bgApp.png);
+        background-position: left;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        padding-top: 166px;
+        padding-bottom: 0px;
+        margin-bottom: 100px;
+    }
+}
+
+.sectionHeroApp__image {
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.sectionHeroApp__right {
+    @media (min-width: 768px) {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+    .headingHighLight {
+        max-width: 480px;
+    }
+}
+
+.sectionHeroApp__text {
+    display: block;
+    margin: 30px 0 40px 0;
+}
+
+.sectionHeroApp__btn {
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
