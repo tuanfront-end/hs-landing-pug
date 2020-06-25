@@ -1,51 +1,46 @@
 mixin sectionAppSlider(props = {})
   +component("div", "sectionAppSlider", props)
-    +heading
+    +heading({
+        before: 'App Screenshot',
+        highlight: ' ',
+        after: ' ',
+        text: 'See all awesome app screenshot, it will be your if you buy it'
+    })
     .sectionAppSlider__content
         
+        .sectionAppSlider__imgApp
+            img(src="../../assets/images/mb.png", alt="")
+        |
+        |
         .sectionAppSlider__slick
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle2.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle2.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle2.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle.png", alt="") 
-            .sectionAppSlider__slickItem
-                .sectionAppSlider__imgApp
-                    img(src="../../assets/images/mb.png", alt="")
-                .sectionAppSlider__img
-                    img(src="../../assets/images/Rectangle2.png", alt="") 
-            
-                
-            
+            -
+                var data = [
+                    '../../assets/images/app/1.PNG',
+                    '../../assets/images/app/2.PNG',
+                    '../../assets/images/app/28.PNG',
+                    '../../assets/images/app/18.PNG',
+                    '../../assets/images/app/3.PNG',
+                    '../../assets/images/app/4.PNG',
+                    '../../assets/images/app/16.PNG',
+                    '../../assets/images/app/5.PNG',
+                    '../../assets/images/app/9.PNG',
+                    '../../assets/images/app/10.PNG',
+                    '../../assets/images/app/12.PNG',
+                    '../../assets/images/app/24.PNG',
+                    '../../assets/images/app/13.PNG',
+                    '../../assets/images/app/15.PNG',
+                    '../../assets/images/app/17.PNG',
+                    '../../assets/images/app/19.PNG',
+                    '../../assets/images/app/20.PNG',
+                    '../../assets/images/app/21.PNG',
+                    '../../assets/images/app/22.PNG',
+                    '../../assets/images/app/23.PNG',
+                    '../../assets/images/app/27.PNG',
+                    '../../assets/images/app/29.PNG',
+                ]
+            each item in data
+                .sectionAppSlider__slickItem
+                    img(src= item, alt="")  
+           
 
 

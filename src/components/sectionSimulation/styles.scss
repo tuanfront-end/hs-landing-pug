@@ -28,11 +28,14 @@
     a {
         margin-right: 10px;
         margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
 .sectionSimulation__right {
     display: none;
+    overflow: hidden;
     @media (min-width: 900px) {
         display: block;
         padding-left: 40px;

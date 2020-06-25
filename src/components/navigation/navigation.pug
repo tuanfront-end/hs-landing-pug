@@ -11,9 +11,9 @@ mixin navigation(props = {})
             div.navigation__menu
               ul
                 li 
-                  a(href="https://help.highspeedblog.com/", target="_blank", rel="noopener noreferrer") Home
+                  a(class=`${props.home ? 'active' : ''}` ,href="https://highspeedblog.com/landing/") Home
                 li 
-                  a(href="https://highspeedblog.com/app-landing/", target="_blank", rel="noopener noreferrer") About application
+                  a(class=`${props.app ? 'active' : ''}`, href="https://highspeedblog.com/app-landing/", target="_blank", rel="noopener noreferrer") About application
                 li 
                   a(href="https://help.highspeedblog.com/", target="_blank", rel="noopener noreferrer") Support
                 li 

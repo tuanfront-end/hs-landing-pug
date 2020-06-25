@@ -1513,8 +1513,9 @@ mixin sectionDemoImg(props = {})
             .row
                 each item in data
                     div(class=`col-lg-3 col-md-6 col-sm-6 col-xs-6 wilTabFilterItem ${item.filter}`)
-                        a(class=`sectionDemoImg__demoItem sectionDemoImg__demoItem--${item.filter}` ,href=`${item.link || '#'}`, target="_blank", rel="noopener noreferrer")
-                            img(src=`${item.image}`, alt="")
-                            span= item.name
+                        a(href=`${item.link || '#'}`, target="_blank", rel="noopener noreferrer")
+                            div(class=`sectionDemoImg__demoItem sectionDemoImg__demoItem--${item.filter}`)
+                                img(src=`${item.image}`, alt="")
+                                span= item.name
             span.sectionDemoImg__overlay
                 a(class="wil-button wil-button--style1 wil-button--extra" href="#", id="wil-show-all-demo") Show all demo

@@ -9,7 +9,7 @@ mixin sectionFeatures(props = {})
             .row
                 each item in data
                     div(class="col-md-4 col-sm-6")
-                        div.mb-30
+                        div(style="height: 100%; padding-bottom: 30px")
                             +textBox3({
                                 title: item.title,
                                 text: item.text,

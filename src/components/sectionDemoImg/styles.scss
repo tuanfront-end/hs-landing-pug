@@ -43,6 +43,7 @@
 }
 
 .sectionDemoImg__demoItem {
+    transition: all .3s;
     display: block;
     margin-bottom: 40px;
     box-shadow: 0 20px 30px 0 rgba($color: #282a54, $alpha: 0.08);
@@ -66,16 +67,16 @@
     height: 200px;
     box-shadow: none;
     overflow: hidden;
-}
-
-.sectionDemoImg__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 240px;
-    z-index: 1;
-    background: linear-gradient(0deg, white, white, rgba(white, .7));
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg, white, white, rgba(white, .7));
+    }
 }
 
 #wil-show-all-demo {

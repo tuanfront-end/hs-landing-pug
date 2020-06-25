@@ -24,7 +24,14 @@ include components/sectionAppSlider/sectionAppSlider
 //- 
 include components/footer/footer
 block content
-  +navigation
+  //- navigation home --------
+  +navigation({home: 'true'})
+  //- End navigation home --------
+
+  //- navigation App --------
+  +navigation({app: 'true'})
+  //-End navigation App --------
+
 
   //- app ---------- BEGIN
   +sectionHeroApp
@@ -74,8 +81,23 @@ block content
       },
     ]
   })
-  +sectionAppSlider
   +sectionSimulation
+  div(style="margin: 100px 0")
+    +sectionAppSlider
+  +sectionTestimonial
+
+  +sectionTextBox({
+    titleBefore: 'Let',
+    titleHighlight: 'HSBlog',
+    titleAfter: 'help you create wonderful stories',
+    text: 'Join the HSBlog community to create a great topic. We always listen to you to build the best features.',
+    style: 'left', 
+    bgColor: '#FEF3F3', 
+    cssStyle: 'border-radius: 40px; overflow: hidden; margin: 0 15px; padding: 60px 0 0 0',
+    img: '../../assets/images/textBox/3.png',
+    button2: 'Purchase naw for 29$',
+    button2Link: 'https://themeforest.net/item/hsblog-magazine-blog-wordpress-theme-and-ios-android-blog-app/27113728',
+  })
 
   //- app ---------- END
 
@@ -167,6 +189,24 @@ block content
         text: `Protects your site website forms from spam entries while letting real people pass through with ease`,
         icon: 'las la-check-circle',
         iconColor: '#48DE57'
+      },
+      {
+        title: 'Live App Settings',
+        text: `It's easy to build your App Home page and App Menu: You just need to use HS Drag & Drop builder system.`,
+        icon: 'las la-sliders-h',
+        iconColor: 'green'
+      },
+      {
+        title: 'One Click Demo Installation',
+        text: `Comes with 210+ pre-build demos, all of them can be imported with 1 Click Demo Installation system.`,
+        icon: 'las la-mouse',
+        iconColor: 'orange'
+      },
+      {
+        title: 'Gutenberg Block',
+        text: `100% compatible with WP Gutenberg block. We also created useful blocks for you: Image Compare, Slider, Code Highlight.`,
+        icon: 'las la-shapes',
+        iconColor: 'cadetblue'
       },
     ]
   })
