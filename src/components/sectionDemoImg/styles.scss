@@ -85,5 +85,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 50px;
+    bottom: 250px;
+    @media (min-width: 768px) {
+        bottom: 100px;
+    }
 }

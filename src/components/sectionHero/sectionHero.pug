@@ -12,12 +12,12 @@ mixin sectionHero(props = {})
                   div(class="col-md-6 col-sm-12")
                     .sectionHero__btn1
                       +button({link:"#", text:'Get started', style: "style1", size: 'large'})
-                  div(class="col-md-6 col-sm-12")
+                  div(class="col-md-6 col-sm-12 dn-m")
                     +button({link:"#", text:'Free', style: "style3", size: 'small'})
                     span(style="display: block") IOS & Android Application
             
             +col({ cols: [12, 12, 12, 6] })
                 .sectionHero__image
                   img(src="../../assets/images/hero/Artboard.png", alt="", srcset="")
-                  img.sectionHero__imagePath(src="../../assets/images/hero/Path2.png", alt="", srcset="")
+                  img(class="dn-m sectionHero__imagePath" src="../../assets/images/hero/Path2.png", alt="", srcset="")
                   

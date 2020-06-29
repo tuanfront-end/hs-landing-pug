@@ -40,4 +40,9 @@
 
 .wil-button--extra {
     padding: 23px 37px;
+    min-width: 188px;
+    text-align: center;
+    @media (max-width: 500px) {
+        padding: 14px 18px;
+    }
 }

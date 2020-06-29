@@ -6,6 +6,7 @@
   _slickSliderTestimonial();
   _slickSliderAppSreenShot();
   // _fixedNavigation();
+  _clickMenuBarResponsive();
 })();
 
 function _wilTabFilter() {
@@ -90,7 +91,15 @@ function _showAllDemo(c) {
     if ($demos.length < 12) return;
 
     if (index < 12 && index >= 8) {
-      element.classList.add("sectionDemoImg__demoItemHalf");
+      if (window.innerWidth > 991) {
+        element.classList.add("sectionDemoImg__demoItemHalf");
+      }
+      if (window.innerWidth > 480) {
+        index >= 10 && element.classList.add("sectionDemoImg__demoItemHalf");
+      }
+      if (window.innerWidth <= 480) {
+        index >= 11 && element.classList.add("sectionDemoImg__demoItemHalf");
+      }
     }
     if (index >= 12) {
       element.classList.add("hide");
@@ -169,4 +178,22 @@ function _windownScroll(event) {
     $nav.style.background = "unset";
     $nav.classList.remove("wil-shadow--1");
   }
+}
+
+function _clickMenuBarResponsive() {
+  const bar = document.getElementById("navigation__menuBar");
+  const menu = document.querySelector(".navigation__menuContent");
+  const resBg = document.querySelector(".navigation__responsiveBg");
+  if (!bar || !menu || !resBg) return;
+  bar.addEventListener("click", () => {
+    if (menu.classList.contains("active-responsive")) {
+      menu.classList.remove("active-responsive");
+    } else {
+      menu.classList.add("active-responsive");
+    }
+  });
+
+  resBg.addEventListener("click", () => {
+    menu.classList.remove("active-responsive");
+  });
 }
