@@ -1,10 +1,12 @@
 .sectionHero {
-    background-size: 100% 100%;
     padding: 50px 0;
-    background-image: url(../../assets/images/hero/bg.png);
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 160px;
+    @media (min-width: 576px) {
+        background-repeat: no-repeat;
+        background-image: url(../../assets/images/hero/bg.png);
+        background-size: 100% 100%;
+        padding-top: 200px;
+        padding-bottom: 160px;
+    }
 }
 
 .sectionHero__content {
